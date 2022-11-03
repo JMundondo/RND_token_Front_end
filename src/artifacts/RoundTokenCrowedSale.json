@@ -2483,7 +2483,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.10",
-  "updatedAt": "2022-11-02T17:49:16.514Z",
+  "updatedAt": "2022-11-03T17:21:16.068Z",
   "devdoc": {
     "methods": {
       "buyTokens(address)": {

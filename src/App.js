@@ -1,7 +1,7 @@
 //import logo from './logo.svg';
 import './App.css';
 import RoundToken from './artifacts/RoundToken.json' ;
-import RoundTokenCrowedSale from './artifacts/RoundTokenCrowedSale.json';
+//import RoundTokenCrowedSale from './artifacts/RoundTokenCrowedSale.json';
 import { DrizzleContext } from '@drizzle/react-plugin';
 import { Drizzle } from "@drizzle/store";
 
@@ -10,7 +10,7 @@ import { Drizzle } from "@drizzle/store";
 const drizzleOptions = {
   contracts: [
    RoundToken ,
-   RoundTokenCrowedSale
+  // RoundTokenCrowedSale
   ], 
 }
 const drizzle = new Drizzle(drizzleOptions);
