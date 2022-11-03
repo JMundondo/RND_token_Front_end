@@ -26,11 +26,11 @@ function App() {
     <DrizzleContext.Consumer>
     {drizzleContext => {
       
-      const { drizzle, drizzleState, initialized } = drizzleContext;
+      const { drizzle, drizzleState, } = drizzleContext;
 
-      if(!initialized) {
+      /*if(!initialized) {
         return "Loading..."
-      }
+      }*/
 
       return (
          
@@ -101,11 +101,11 @@ function App() {
                 
                 </div>
                 <AccountData
-          drizzle={drizzle}
-          drizzleState={drizzleState}
-          accountIndex={0}
-          units="ether"
-          precision={3}
+                    drizzle={drizzle}
+                    drizzleState={drizzleState}
+                    accountIndex={0}
+                    units="ether"
+                    precision={3}
         />
       
                 </div>
