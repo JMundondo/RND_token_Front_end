@@ -6,6 +6,7 @@ import RoundToken from './artifacts/RoundToken.json' ;
 import { DrizzleContext } from '@drizzle/react-plugin';
 import { Drizzle } from "@drizzle/store";
 import { newContextComponents } from "@drizzle/react-components";
+
 const { AccountData } = newContextComponents;
 
 
@@ -26,11 +27,11 @@ function App() {
     <DrizzleContext.Consumer>
     {drizzleContext => {
       
-      const { drizzle, drizzleState, } = drizzleContext;
+      const { drizzle, drizzleState,initialized } = drizzleContext;
 
-      /*if(!initialized) {
+      if(!initialized) {
         return "Loading..."
-      }*/
+      }
 
       return (
          
@@ -110,7 +111,11 @@ function App() {
       
                 </div>
                 )
-              }}
+              }
+              
+              
+          }
+              
          
       
   </DrizzleContext.Consumer>
