@@ -53,7 +53,7 @@
   "sourceMap": "66:352:12:-;;;113:10;90:33;;;;;;;;;;;;;;;;;;;;66:352;8:9:-1;5:2;;;30:1;27;20:12;5:2;66:352:12;;;;;;;",
   "deployedSourceMap": "66:352:12:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;66:352:12;;;;;;;;;;;;;;;;;;;;;;;;;;;;;127:36;;;:::i;:::-;;;;;;;;;;;;;;;;;;;90:33;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;313:103;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;313:103:12;;;;;;;;;;;;;;;;;:::i;:::-;;127:36;;;;:::o;90:33::-;;;;;;;;;;;;;:::o;313:103::-;225:5;;;;;;;;;;;211:19;;:10;:19;;;196:101;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;402:9;375:24;:36;;;;313:103;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Migrations {\n  address public owner = msg.sender;\n  uint public last_completed_migration;\n\n  modifier restricted() {\n    require(\n      msg.sender == owner,\n      \"This function is restricted to the contract's owner\"\n    );\n    _;\n  }\n\n  function setCompleted(uint completed) public restricted {\n    last_completed_migration = completed;\n  }\n}\n",
-  "sourcePath": "C:\\Users\\Jephias T Mundondo\\OneDrive\\Desktop\\RND_token\\contracts\\Migrations.sol",
+  "sourcePath": "/Users/tcmundondo/Desktop/RND_token/RND_token/contracts/Migrations.sol",
   "ast": {
     "absolutePath": "project:/contracts/Migrations.sol",
     "exportedSymbols": {
@@ -912,6 +912,12 @@
     "version": "0.5.17+commit.d19bba13.Emscripten.clang"
   },
   "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x8a939B95F438110e7584372367CdAe46bdb91e39",
+      "transactionHash": "0x5ba55f678afbe8c11643108adba792bde2838afc816d9cef61af404ed126c17d"
+    },
     "1667410598980": {
       "events": {},
       "links": {},
@@ -923,10 +929,59 @@
       "links": {},
       "address": "0xe898A38c19C01bD5f2922299CdFC6ED0A1F79069",
       "transactionHash": "0x474900e57adbf52fe4781f75254069613f86681a355b6695fbec5865ca0509c7"
+    },
+    "1667550688877": {
+      "events": {},
+      "links": {},
+      "address": "0x45f3bBda8b7674Ef8f3F2d9127adfe4Dc32B488f",
+      "transactionHash": "0xb7467ddc88e7fe33080beab5369a500386e151b454902dc95d1e6e5831d3fcbe"
+    },
+    "1667560082942": {
+      "events": {},
+      "links": {},
+      "address": "0xdeE4558Ed0de9cDB1dabd04F472c606D637610C0",
+      "transactionHash": "0xffdd19a2b4f690d2c6d1c88ae3c5c7d68ce5b4dc88acbb9fef5430c2a961b599"
+    },
+    "1667560909124": {
+      "events": {},
+      "links": {},
+      "address": "0xc3120B8Eb00312FB729De0985c08BA16E98Fd9d0",
+      "transactionHash": "0x6c486ba47aa55965e878d67ce55fa68c4025ef0c7c97db6ad1aa4fc197163351"
+    },
+    "1667560989627": {
+      "events": {},
+      "links": {},
+      "address": "0xCA40825dc61C79eF854a7cc13289fAcE73dA5e24",
+      "transactionHash": "0x72e517d20e17cc0d8fc48db9ed75c8f95866506c9b9914fbe9a811e8650e3dc5"
+    },
+    "1667561591513": {
+      "events": {},
+      "links": {},
+      "address": "0x09134b453Bb50216D5aB8a4cB11284721a58BebF",
+      "transactionHash": "0x316b2e224b2d7885459106d3d97ce626eb6c0161a2001c7ac81056e6a9e9e292"
+    },
+    "1667562587329": {
+      "events": {},
+      "links": {},
+      "address": "0x7F3be6f8b3EC07FF1D75a1b6974362997245c814",
+      "transactionHash": "0x6bdc11ce1b4b09d7d614f0d0016adeb70d483d76217dc5b2620c3b86f085ceb8"
+    },
+    "1667563193737": {
+      "events": {},
+      "links": {},
+      "address": "0xF2D0f571F57b5362b553fb6Ec59489A1192660B5",
+      "transactionHash": "0xd667440cfc1fbb4467d79ae261f7c565997872b9bedba5b523c986766f61a128"
+    },
+    "1667565749894": {
+      "events": {},
+      "links": {},
+      "address": "0x1F33Ce4511c88af59B6A10b2704AC5a4a8a99490",
+      "transactionHash": "0x604df1b616eb687b904a42845ecce05681a3761b938b45f58410b137a458e389"
     }
   },
   "schemaVersion": "3.4.10",
-  "updatedAt": "2022-11-04T01:55:50.150Z",
+  "updatedAt": "2022-11-04T13:06:19.997Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },
