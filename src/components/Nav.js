@@ -51,7 +51,7 @@ class Nav extends React.Component {
                     hover:bg-gray-100 md:hover:bg-transparent
                      md:hover:text-blue-700 md:p-0 md:dark:hover:text-white 
                      dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white
-                     md:dark:hover:bg-transparent dark:border-gray-700">Project Road map</p>
+                     md:dark:hover:bg-transparent dark:border-gray-700">White Paper</p>
                 </Link>
           
                 </li>
@@ -63,6 +63,17 @@ class Nav extends React.Component {
                     md:hover:text-blue-700 md:p-0 md:dark:hover:text-white 
                     dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white
                      md:dark:hover:bg-transparent dark:border-gray-700">tokens distribution chart</p>
+                </Link>
+          
+                </li>
+                <li>
+                <Link to="projectroadmap">
+                  <p 
+                   className="block py-2 pr-4 pl-3 text-gray-700 rounded 
+                   hover:bg-gray-100 md:hover:bg-transparent
+                    md:hover:text-blue-700 md:p-0 md:dark:hover:text-white 
+                    dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white
+                     md:dark:hover:bg-transparent dark:border-gray-700">Project Road Map</p>
                 </Link>
           
                 </li>

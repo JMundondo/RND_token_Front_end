@@ -11,6 +11,7 @@ import WhitePaper from './components/whitepaper' ;
 import Team from './components/Team';
 import Home from "./components/Home";
 import Nav from "./components/Nav" ;
+import ProjectRoadMap from "./components/ProjectRoadMap";
 
 const { AccountData , ContractData ,ContractForm } = newContextComponents;
 
@@ -56,6 +57,7 @@ function App() {
                 <Route path="/" element={ <Home drizzle={drizzle} drizzleState={drizzleState}/> }/>
                 <Route path="/whitepaper" element={ <WhitePaper/> }/>
                 <Route path="/team" element={ <Team/> }/>
+                <Route path="/projectroadmap" element={<ProjectRoadMap/>} />
             </Routes>
         
        </div>

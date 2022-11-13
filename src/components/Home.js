@@ -45,9 +45,7 @@ class Home extends React.Component {
                 </div>
             </div>
             <div className="max-w-lg text-center sm:text-left">
-              <h1 className="text-4xl font-bold text-gray-100 tracking-tight">
-                  Hello world tailwind! lets go.
-                </h1>
+             
               </div>
            
               
