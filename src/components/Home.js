@@ -124,7 +124,15 @@ class Home extends React.Component {
             
             
                             </div>
-                            <div className="text-center cursor-pointer duration-150 hover:bg-neutral-200 py-0.5 bg-neutral-100 text-neutral-400 font-semibold rounded-lg mt-3">+1 more</div>
+                            <div className="text-center cursor-pointer duration-150 hover:bg-neutral-200 py-0.5 bg-neutral-100 text-neutral-400 font-semibold rounded-lg mt-3">Balance of Round in Your Wallet <ContractData
+                                            drizzle={this.props.drizzle}
+                                            drizzleState={this.props.drizzleState}
+                                            contract="RoundToken"
+                                            method="balanceOf"
+                                            methodArgs={[this.props.drizzleState.accounts[0]]}
+                                            /> </div>
+                              
+
                         </div>
             
                     
@@ -207,7 +215,20 @@ class Home extends React.Component {
             
             
                             </div>
-                            <div className="cursor-pointer hover:bg-neutral-900 duration-150 text-center py-0.5 bg-neutral-800 text-neutral-500 font-semibold rounded-lg mt-3">+1 more</div>
+                            <div className="cursor-pointer hover:bg-neutral-900 duration-150 text-center py-0.5 bg-neutral-800 text-neutral-500 font-semibold rounded-lg mt-3"> Crowd Sale Address {this.props.drizzle.contracts.RoundTokenCrowdSale.address}</div>
+                            <div className="cursor-pointer hover:bg-neutral-900 duration-150 text-center 
+                            py-0.5 bg-neutral-800 text-neutral-500 font-semibold rounded-lg mt-3">
+                               <span className="px-2"> Balance of RND in Crowd Sale </span>
+                                 
+                                                    <ContractData
+                                                drizzle={this.props.drizzle}
+                                                drizzleState={this.props.drizzleState}
+                                                contract="RoundToken"
+                                                method="balanceOf"
+                                                methodArgs={[this.props.drizzle.contracts.RoundTokenCrowdSale.address]}
+                                                />  
+                                
+                              </div>
                         </div>
             
                 

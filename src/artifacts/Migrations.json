@@ -53,7 +53,7 @@
   "sourceMap": "66:352:16:-;;;113:10;90:33;;;;;;;;;;;;;;;;;;;;66:352;8:9:-1;5:2;;;30:1;27;20:12;5:2;66:352:16;;;;;;;",
   "deployedSourceMap": "66:352:16:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;66:352:16;;;;;;;;;;;;;;;;;;;;;;;;;;;;;127:36;;;:::i;:::-;;;;;;;;;;;;;;;;;;;90:33;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;313:103;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;313:103:16;;;;;;;;;;;;;;;;;:::i;:::-;;127:36;;;;:::o;90:33::-;;;;;;;;;;;;;:::o;313:103::-;225:5;;;;;;;;;;;211:19;;:10;:19;;;196:101;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;402:9;375:24;:36;;;;313:103;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Migrations {\n  address public owner = msg.sender;\n  uint public last_completed_migration;\n\n  modifier restricted() {\n    require(\n      msg.sender == owner,\n      \"This function is restricted to the contract's owner\"\n    );\n    _;\n  }\n\n  function setCompleted(uint completed) public restricted {\n    last_completed_migration = completed;\n  }\n}\n",
-  "sourcePath": "C:\\Users\\Jephias T Mundondo\\OneDrive\\Desktop\\RND_token\\contracts\\Migrations.sol",
+  "sourcePath": "/Users/tcmundondo/Desktop/RND_token/RND_token/contracts/Migrations.sol",
   "ast": {
     "absolutePath": "project:/contracts/Migrations.sol",
     "exportedSymbols": {
@@ -915,12 +915,24 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xd1903947cCdC1b030f8d7bAd0370E5c1feDaF9B9",
-      "transactionHash": "0x2a06b13fa39cea8cac74b1f343b5c359fe73d4233dbe5ae652df3544825aa9ec"
+      "address": "0xEcdb2a4fF0642f6D83c8329E5d72bF4F78C8CD48",
+      "transactionHash": "0xfd00b0e78e779ca0a96f585e5d29bab764558424924fecc954fd8a12733656a2"
+    },
+    "1668419514705": {
+      "events": {},
+      "links": {},
+      "address": "0xD65283C51dd82EE9b8ebf2B5b7E73a646B702DD3",
+      "transactionHash": "0xc0d5e82a9a2ee89fe3058cb07e01c1eb6651f63af46af2ef82df4f13a9d0da63"
+    },
+    "1668429907673": {
+      "events": {},
+      "links": {},
+      "address": "0x005bb3ae995aA6A93170c35bD02157f4131dB647",
+      "transactionHash": "0x0b9cd44963e458694a98dee74a3da4b6bf1f6c262dbbf74e0f3cd4c5eb3073c4"
     }
   },
   "schemaVersion": "3.4.10",
-  "updatedAt": "2022-11-13T01:00:43.169Z",
+  "updatedAt": "2022-11-14T13:09:10.092Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
